@@ -1,0 +1,16 @@
+---
+description: Reutilizar a biblioteca visual antes de criar ícones, molduras ou animações
+alwaysApply: true
+---
+
+# Biblioteca visual
+
+Antes de desenhar um ícone, folha, moldura, divisor, textura, carrossel ou animação, consulte `src/visual/CATALOG.md` e `src/visual/registry.js`. Reutilize o que já existe.
+
+- Não altere páginas, `src/styles.css` nem imagens atuais sem pedido explícito.
+- Não importe `src/visual` em `App.jsx`, `main.jsx` ou no CSS do site só para deixar a biblioteca disponível.
+- Não baixe arte do Freepik ou do Flaticon sem autorização. Esses acervos são pagos ou exigem atribuição.
+- Ícones do bundle: Lucide, Phosphor e Hugeicons. Tabler, Radix Icons e ícones coloridos entram pelo Iconify, só no componente pedido.
+- Motion já anima o site. GSAP, Lenis e Embla só entram na tela quando o pedido for usá-los.
+
+Exemplo: "folha no canto" usa `CantoFolha` ou `Folha` de `src/visual/decor/`. "Carrossel premium" usa `PremiumCarousel`.
